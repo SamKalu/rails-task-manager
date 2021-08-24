@@ -3,9 +3,117 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 li {
   text-decoration: none !important;
   color: black;
+}
+
+.button {
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 64px;
+  background-color: lightblue;
+  font-weight: bold;
+  position:absolute;
+  bottom: 16px;
+  right: 16px;
+  text-align-last: center;
+}
+
+.task {
+  width: 100%;
+  height: 32px;
+  font-size: 24px;
+  padding: 16px 0px 4px 16px;
+}
+
+.task:hover {
+  text-decoration: underline;
+}
+
+.delete {
+  margin-left: 16px;
+  background-color: lightgrey;
+}
+
+.complete-and-delete {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0;
+}
+
+#done {
+  color: green;
+}
+
+#not-done {
+  color: lightcoral;
+}
+
+#done-task {
+  color: green;
+  font-size: 24px;
+  position: absolute;
+  bottom: 720px;
+}
+
+#not-done-task {
+  color: lightcoral;
+  font-size: 24px;
+  position: absolute;
+  bottom: 720px;
+}
+
+.list-item {
+  width: 100%;
+  text-align-last: center;
+  height: 80px;
+  box-shadow: 2px 2px darkgray;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: lightgray;
+}
+
+.list-item:hover {
+  width: 100%;
+  text-align-last: center;
+  height: 80px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.title {
+  width: 100%;
+  text-align-last: center;
+  font-size: 48px;
+  background-color: lightseagreen;
+  margin-top: 0;
+  padding: 16px;
+}
+
+body {
+  background-color: beige;
+}
+
+.task-title {
+  font-size: 3em;
+}
+
+.details {
+  font-size: 24px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+
+#home {
+  left: 16px;
 }

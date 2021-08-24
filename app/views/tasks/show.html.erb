@@ -1,0 +1,11 @@
+<h1 class="task-title"><%= @task.title %></h1>
+
+<p class="details">-<em><%= @task.details %></em></p>
+<% if @task.completed == true %>
+  <p id="done-task"><%= "Done ✅" %></p>
+<% else %>
+  <p id="not-done-task"><%= "Not Done ❌" %></p>
+<% end %></div>
+<div class="button"><%= link_to 'Edit task', edit_task_path(@task) %></div>
+<br>
+<div class="button" id="home"><%= link_to 'Home', tasks_path %></div>
